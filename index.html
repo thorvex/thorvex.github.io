@@ -8,20 +8,13 @@
 </head>
 <body>
 	<div class="menu">
-		<button id="imagesDirButton">Choose ImagesDir</button><span id="currentImagePath"></span><br>
-		<input type="file" id="imageInput" accept="image/*"><br>
+		<button id="dirPicker">Выберите папку</button><span id="processing"></span><br>
+		<input type="file" id="imgPicker" accept="image/*" disabled=""><br>
 		<img id="image" src="#">
 	</div>
 	<div class="content">
 		<table>
-			<thead>
-				<tr>
-					<th>pHash</th>
-					<th>Gray16x16 AvgDiff</th>
-					<th>Gray16x16 Euclid</th>
-				</tr>
-			</thead>
-			<tbody id="resultImages"></tbody>
+			<tbody id="results"></tbody>
 		</table>
 	</div>
 	<script src="main.js"></script>

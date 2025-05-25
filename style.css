@@ -81,11 +81,12 @@ button:active, input[type="file"]::file-selector-button:active {
 }
 
 .content th, .content td, .content td img {
-	width: calc(100% / 3);
+	width: 100%;
 	vertical-align: top;
 }
 
 .content td img {
 	margin-top: 5px;
 	cursor: pointer;
+	max-width: 256px;
 }
