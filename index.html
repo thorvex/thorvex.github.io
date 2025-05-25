@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Image Search Engine</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="menu">
+		<button id="imagesDirButton">Choose ImagesDir</button><span id="currentImagePath"></span><br>
+		<input type="file" id="imageInput" accept="image/*"><br>
+		<img id="image" src="#">
+	</div>
+	<div class="content">
+		<table>
+			<thead>
+				<tr>
+					<th>pHash</th>
+					<th>Gray16x16 AvgDiff</th>
+					<th>Gray16x16 Euclid</th>
+				</tr>
+			</thead>
+			<tbody id="resultImages"></tbody>
+		</table>
+	</div>
+	<script src="main.js"></script>
+</body>
+</html>
